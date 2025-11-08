@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | SK Events</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --white: #ffffff;
+      --gold: gold;
+      --black: #000;
+      --bg: #111;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--gold);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--bg);
+      padding: 15px 30px;
+      border-bottom: 2px solid var(--gold);
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      height: 70px;
+      width: auto;
+      border-radius: 8px;
+    }
+
+    .logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8em;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--gold);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover, .active {
+      color: var(--white);
+    }
+
+    .book-btn {
+      background-color: var(--gold);
+      color: black;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .book-btn:hover {
+      background-color: var(--white);
+      color: black;
+    }
+
+    /* Hamburger */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: var(--gold);
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--bg);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        border-top: 2px solid var(--gold);
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .book-btn {
+        display: none;
+      }
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .about-section {
+      padding: 80px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about-section h1 {
+      color: var(--gold);
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .about-card {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .about-card img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      border: 2px solid var(--gold);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    }
+
+    .about-section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #ddd;
+      text-align: justify;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: var(--bg);
+      border-top: 2px solid var(--gold);
+      color: var(--gold);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpg" alt="SK Events Logo" class="logo" />
+      <span class="logo-text">SK Events</span>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://www.instagram.com/sk_events_firework_decorations" target="_blank" class="book-btn">Book Now</a>
+  </header>
+
+  <section class="about-section">
+    <h1>About SK Events</h1>
+
+    <div class="about-card">
+      <img src="card.jpg" alt="SK Events Card" />
+    </div>
+
+    <p>
+      At <strong>SK Events</strong>, we specialize in creating unforgettable celebrations that reflect your personality and style. From stunning stage decorations to magical fireworks, our team ensures that every detail shines with elegance and creativity.
+    </p>
+    <p>
+      With years of experience in event management and decoration, we have become a trusted name for weddings, haldi ceremonies, birthdays, and corporate functions. Our goal is simple — to make your special day truly extraordinary.
+    </p>
+    <p>
+      Whether it’s a grand event or an intimate celebration, SK Events brings your dream vision to life with golden sparkle and perfection.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 SK Events | Firework & Decoration | All Rights Reserved
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    toggle.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
