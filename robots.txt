@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://skeventsdecoration.github.io/SKEvent/sitemap.xml
