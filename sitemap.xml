@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://skeventsdecoration.github.io/SKEvent/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Index Page -->
+  <url>
+    <loc>https://skeventsdecoration.github.io/SKEvent/index.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://skeventsdecoration.github.io/SKEvent/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://skeventsdecoration.github.io/SKEvent/services.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://skeventsdecoration.github.io/SKEvent/gallery.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://skeventsdecoration.github.io/SKEvent/contact.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
